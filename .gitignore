@@ -1,0 +1,7 @@
+db/
+
+logs/
+
+.idea/
+
+node_modules/
