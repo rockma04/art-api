@@ -15,6 +15,31 @@ app.use('/pages', pagesRouter);
 const tabsRouter = require("./routes/tabs");
 app.use('/tabs', tabsRouter);
 
+const collageRouter = require("./routes/collage");
+app.use('/collage', collageRouter);
+
+const coloredPencilRouter = require("./routes/coloredPencil");
+app.use('/coloredPencil', coloredPencilRouter);
+
+const itemsRouter = require("./routes/items");
+app.use('/items', itemsRouter);
+
+const otherProjectsRouter = require("./routes/otherProjects");
+app.use('/otherProjects', otherProjectsRouter);
+
+const paintingsRouter = require("./routes/paintings");
+app.use('/paintings', paintingsRouter);
+
+const photographyRouter = require("./routes/photography");
+app.use('/photography', photographyRouter);
+
+const printsRouter = require("./routes/prints");
+app.use('/prints', printsRouter);
+
+const stockListRouter = require("./routes/stockList");
+app.use('/stockList', stockListRouter);
+
+
 app.get("/health", (req, res) => {
     res.status(200).json({
         status: "ok",
