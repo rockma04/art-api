@@ -39,6 +39,12 @@ app.use('/prints', printsRouter);
 const stockListRouter = require("./routes/stockList");
 app.use('/stockList', stockListRouter);
 
+const galleriesRouter = require("./routes/galleries");
+app.use('/galleriesList', galleriesRouter);
+
+const stylesRouter = require("./routes/styles");
+app.use('/styles', stylesRouter);
+
 
 app.get("/health", (req, res) => {
     res.status(200).json({
