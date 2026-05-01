@@ -78,3 +78,19 @@ CREATE TABLE IF NOT EXISTS stockList (
     project TEXT NOT NULL,
     item TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS galleries (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    style TEXT NOT NULL,
+    description TEXT NOT NULL,
+    link TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS styles (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    style TEXT NOT NULL,
+    description TEXT NOT NULL,
+    image_1 TEXT NOT NULL,
+    image_2 TEXT NOT NULL,
+    image_3 TEXT NOT NULL
+);
