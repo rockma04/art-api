@@ -86,6 +86,11 @@ db.exec(`
         project TEXT NOT NULL,
         item TEXT NOT NULL
     );
+
+    CREATE TABLE IF NOT EXISTS homeCarousel (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        image TEXT NOT NULL
+    );
 `);
 
 module.exports = db;

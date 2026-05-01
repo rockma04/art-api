@@ -45,6 +45,9 @@ app.use('/galleriesList', galleriesRouter);
 const stylesRouter = require("./routes/styles");
 app.use('/styles', stylesRouter);
 
+const homeCarouselRouter = require("./routes/homeCarousel");
+app.use('/homeCarousel', homeCarouselRouter);
+
 
 app.get("/health", (req, res) => {
     res.status(200).json({
