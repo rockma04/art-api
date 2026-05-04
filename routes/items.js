@@ -25,7 +25,7 @@ router.post('/', (req, res) => {
         const result = db.prepare(`
             INSERT INTO stockList (style, project, item)
             VALUES (?, ?, ?)
-        `).run(style, project, item || null);
+        `).run(style, project, item|| null);
 
         const itemId = result.lastInsertRowid;
 
@@ -33,10 +33,10 @@ router.post('/', (req, res) => {
         id: itemId,
         style,
         project,
-        item,
+        item
     };
 
-    rest.status(201).json(newItem);
+    res.status(201).json(newItem);
     } catch (error) {
         res.status(500).json({ error: 'Failed to create item'});
     }

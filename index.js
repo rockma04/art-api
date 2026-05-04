@@ -48,6 +48,12 @@ app.use('/styles', stylesRouter);
 const homeCarouselRouter = require("./routes/homeCarousel");
 app.use('/homeCarousel', homeCarouselRouter);
 
+const eventsRouter = require("./routes/events");
+app.use('/events', eventsRouter);
+
+const calendarRouter = require("./routes/calendar");
+app.use('/calendar', calendarRouter);
+
 
 app.get("/health", (req, res) => {
     res.status(200).json({

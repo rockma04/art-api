@@ -91,6 +91,13 @@ db.exec(`
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         image TEXT NOT NULL
     );
+
+    CREATE TABLE IF NOT EXISTS calendar (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        start TEXT NOT NULL,
+        end TEXT NOT NULL
+    );
 `);
 
 module.exports = db;
