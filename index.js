@@ -40,7 +40,7 @@ const stockListRouter = require("./routes/stockList");
 app.use('/stockList', stockListRouter);
 
 const galleriesRouter = require("./routes/galleries");
-app.use('/galleriesList', galleriesRouter);
+app.use('/galleries', galleriesRouter);
 
 const stylesRouter = require("./routes/styles");
 app.use('/styles', stylesRouter);
