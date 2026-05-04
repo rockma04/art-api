@@ -98,6 +98,16 @@ db.exec(`
         start TEXT NOT NULL,
         end TEXT NOT NULL
     );
+
+    CREATE TABLE IF NOT EXISTS awards (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        description TEXT NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS commissions (
+        id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        description TEXT NOT NULL
+    );
 `);
 
 module.exports = db;

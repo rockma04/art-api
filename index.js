@@ -54,6 +54,12 @@ app.use('/events', eventsRouter);
 const calendarRouter = require("./routes/calendar");
 app.use('/calendar', calendarRouter);
 
+const awardsRouter = require("./routes/awards");
+app.use('/awards', awardsRouter);
+
+const commissionsRouter = require("./routes/commissions");
+app.use('/commissions', commissionsRouter);
+
 
 app.get("/health", (req, res) => {
     res.status(200).json({
